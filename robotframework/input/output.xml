@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180922 00:52:40.524" generator="Robot 3.0.4 (Python 2.7.10 on darwin)">
+<suite source="/Users/mr.sense/Dev/robotframework/sample.code/robotframework/input/input.robot" id="s1" name="Input">
+<test id="s1-t1" name="Basic Test">
+<kw name="Open Html">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://localhost:8000/input.html</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20180922 00:52:40.656" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/input.html'.</msg>
+<status status="PASS" endtime="20180922 00:52:42.470" starttime="20180922 00:52:40.656"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180922 00:52:42.680" starttime="20180922 00:52:42.471"></status>
+</kw>
+<status status="PASS" endtime="20180922 00:52:42.680" starttime="20180922 00:52:40.656"></status>
+</kw>
+<kw name="Insert Text To Input Field">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>input-text</arg>
+<arg>hello world</arg>
+</arguments>
+<msg timestamp="20180922 00:52:42.682" level="INFO">Typing text 'hello world' into text field 'input-text'.</msg>
+<status status="PASS" endtime="20180922 00:52:42.799" starttime="20180922 00:52:42.681"></status>
+</kw>
+<status status="PASS" endtime="20180922 00:52:42.799" starttime="20180922 00:52:42.681"></status>
+</kw>
+<kw name="Insert File To Input Field">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>input-file</arg>
+<arg>/Users/mr.sense/Dev/robotframework/sample.code/robotframework/input/input.html</arg>
+</arguments>
+<status status="PASS" endtime="20180922 00:52:42.834" starttime="20180922 00:52:42.800"></status>
+</kw>
+<status status="PASS" endtime="20180922 00:52:42.834" starttime="20180922 00:52:42.799"></status>
+</kw>
+<kw name="Click The button">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>input-button</arg>
+</arguments>
+<msg timestamp="20180922 00:52:42.835" level="INFO">Clicking element 'input-button'.</msg>
+<status status="PASS" endtime="20180922 00:52:42.957" starttime="20180922 00:52:42.835"></status>
+</kw>
+<status status="PASS" endtime="20180922 00:52:42.957" starttime="20180922 00:52:42.834"></status>
+</kw>
+<status status="PASS" endtime="20180922 00:52:42.957" critical="yes" starttime="20180922 00:52:40.655"></status>
+</test>
+<status status="PASS" endtime="20180922 00:52:42.959" starttime="20180922 00:52:40.527"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Input" pass="1">Input</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
